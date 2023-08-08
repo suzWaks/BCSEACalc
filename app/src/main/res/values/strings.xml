@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">BCSEACalc</string>
+    <string name="commerce">Commerce</string>
+    <string name="arts">Arts</string>
+    <string name="h2_text">I am a student taking</string>
+    <string name="science">Science</string>
+    <string name="percentage_calculator">PERCENTAGE CALCULATOR</string>
+    <string name="bcsea_logo">BCSEA_logo</string>
+    <string name="marks_enter">Please enter your marks</string>
+    <string name="english">English:</string>
+    <string name="dzongkha">Dzongkha: </string>
+    <string name="maths">Maths:</string>
+    <string name="biology">Biology:</string>
+    <string name="chemistry">Chemistry:</string>
+    <string name="physics">Physics:</string>
+    <string name="phy_hint">Phyics marks</string>
+    <string name="che_hint">Chemistry Marks</string>
+    <string name="bio_hint">Biology mark</string>
+    <string name="math_hint">Maths mark</string>
+    <string name="drop">Drop</string>
+    <string name="gradient_background">Gradient Background</string>
+    <string name="your_percentage">Your percentage</string>
+    <string name="per">%</string>
+</resources>

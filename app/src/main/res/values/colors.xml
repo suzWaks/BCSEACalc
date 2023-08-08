@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="land_btn">#00C1D4</color>
+    <color name="dark_purple">#512D6D</color>
+    <color name="light_purple">#895cac</color>
+    <color name="orange">#F8485E</color>
+    <color name="yellow">#fff500</color>
+</resources>

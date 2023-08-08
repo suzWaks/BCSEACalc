@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scienceCalc">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:background="@drawable/shape_background"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/land_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/marks_enter"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="62dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/bcsea_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bcsea_logo_white"
+        app:tint="@color/orange" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/percentage_calculator"
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toEndOf="@+id/icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label_eng"
+        style="@style/StyleLabel"
+        android:layout_marginTop="40dp"
+        android:labelFor="@id/eng_mark"
+        android:text="@string/english"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linear_layout" />
+
+    <EditText
+        android:id="@+id/eng_mark"
+        style="@style/StyleField"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:autofillHints="99"
+        android:minHeight="48dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/dzo_mark"
+        app:layout_constraintStart_toEndOf="@+id/label_eng"
+        app:layout_constraintStart_toStartOf="@+id/dzo_mark"
+        app:layout_constraintTop_toTopOf="@+id/linear_layout"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/label_dzo"
+        style="@style/StyleLabel"
+        android:layout_marginTop="48dp"
+        android:labelFor="@id/dzo_mark"
+        android:text="@string/dzongkha"
+        app:layout_constraintEnd_toEndOf="@+id/label_eng"
+        app:layout_constraintStart_toStartOf="@+id/label_eng"
+        app:layout_constraintTop_toBottomOf="@id/label_eng" />
+
+    <EditText
+        android:id="@+id/dzo_mark"
+        style="@style/StyleField"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:autofillHints="99"
+        android:minHeight="48dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/label_dzo"
+        app:layout_constraintTop_toBottomOf="@+id/eng_mark"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/label_mat"
+        style="@style/StyleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maths"
+        app:layout_constraintEnd_toEndOf="@+id/label_dzo"
+        app:layout_constraintStart_toStartOf="@+id/label_dzo"
+        app:layout_constraintTop_toBottomOf="@+id/label_dzo" />
+
+    <EditText
+        android:id="@+id/mat_mark"
+        style="@style/StyleField"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:autofillHints="99"
+        android:minHeight="48dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/dzo_mark"
+        app:layout_constraintStart_toEndOf="@+id/label_mat"
+        app:layout_constraintStart_toStartOf="@+id/dzo_mark"
+        app:layout_constraintTop_toBottomOf="@+id/dzo_mark"
+        tools:ignore="RtlSymmetry" />
+
+    <ToggleButton
+        android:id="@+id/Mat_drop"
+        android:layout_width="55dp"
+        android:layout_height="37dp"
+        android:text="@string/drop"
+        app:layout_constraintEnd_toStartOf="@+id/label_mat"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/label_mat" />
+
+    <TextView
+        android:id="@+id/label_bio"
+        style="@style/StyleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/biology"
+        android:labelFor="@id/bio_mark"
+
+        app:layout_constraintEnd_toEndOf="@+id/label_mat"
+        app:layout_constraintStart_toStartOf="@+id/label_mat"
+        app:layout_constraintTop_toBottomOf="@+id/label_mat" />
+
+    <EditText
+        android:id="@+id/bio_mark"
+        style="@style/StyleField"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints="99"
+        android:textSize="24sp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/mat_mark"
+        app:layout_constraintStart_toEndOf="@+id/label_bio"
+        app:layout_constraintStart_toStartOf="@+id/mat_mark"
+        app:layout_constraintTop_toBottomOf="@+id/mat_mark"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/label_che"
+        style="@style/StyleLabel"
+        android:text="@string/chemistry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_bio" />
+
+    <EditText
+        android:id="@+id/che_mark"
+        style="@style/StyleField"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints="99"
+        android:minHeight="48dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/bio_mark"
+        app:layout_constraintStart_toEndOf="@+id/label_che"
+        app:layout_constraintStart_toStartOf="@+id/bio_mark"
+        app:layout_constraintTop_toBottomOf="@+id/bio_mark" />
+
+    <TextView
+        android:id="@+id/label_phy"
+        style="@style/StyleLabel"
+        android:text="@string/physics"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_che" />
+
+    <EditText
+        android:id="@+id/phy_mark"
+        style="@style/StyleField"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints="99"
+        android:minHeight="48dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/che_mark"
+        app:layout_constraintStart_toEndOf="@+id/label_phy"
+        app:layout_constraintStart_toStartOf="@+id/che_mark"
+        app:layout_constraintTop_toBottomOf="@+id/che_mark" />
+
+    <ToggleButton
+        android:id="@+id/Bio_drop"
+        android:layout_width="55dp"
+        android:layout_height="37dp"
+        android:text="@string/drop"
+        app:layout_constraintEnd_toStartOf="@+id/label_bio"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/label_bio" />
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="16dp"
+        android:text="Calculate"
+        android:textSize="20sp"
+        app:cornerRadius="8dp"
+        app:iconPadding="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
